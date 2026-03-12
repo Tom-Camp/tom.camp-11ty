@@ -1,0 +1,20 @@
+const { DateTime } = require("luxon");
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+  eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
+  eleventyConfig.addFilter("date", (dateVal, format) => {
+    return DateTime.fromJSDate(new Date(dateVal), { zone: "utc" }).toFormat(
+      format,
+    );
+  });
+
+  return {
+    dir: {
+      input: "src",
+      output: "_site",
+      includes: "_includes",
+    },
+  };
+};

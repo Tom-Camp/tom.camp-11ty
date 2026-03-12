@@ -1,0 +1,20 @@
+/* Custom overrides */
+:root {
+  --bulma-primary-h: 217deg;
+  --bulma-primary-s: 100%;
+  --bulma-primary-l: 20%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

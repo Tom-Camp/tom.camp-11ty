@@ -1,0 +1,25 @@
+---
+layout: base.njk
+---
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <article>
+          <p class="has-text-grey is-size-7 mb-2">
+            {{ page.date | date("MMMM d, yyyy") }}
+          </p>
+          <h1 class="title">{{ title }}</h1>
+          {% if description %}
+          <p class="subtitle">{{ description }}</p>
+          {% endif %}
+          <hr />
+          <div class="content">{{ content | safe }}</div>
+          <hr />
+          <a href="/blog/" class="button is-light">&larr; Back to Blog</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

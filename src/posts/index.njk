@@ -1,0 +1,33 @@
+---
+title: Post
+layout: base.njk
+---
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <h1 class="title">Blog</h1>
+        <hr />
+        {% set posts = collections.blog | reverse %} {% for post in posts %}
+        <article class="box mb-5">
+          <p class="has-text-grey is-size-7 mb-1">
+            {{ post.date | date("MMMM d, yyyy") }}
+          </p>
+          <a href="{{ post.url }}" class="title is-4 has-text-dark"
+            >{{ post.data.title }}</a
+          >
+          {% if post.data.description %}
+          <p class="mt-2 mb-3">{{ post.data.description }}</p>
+          {% endif %}
+          <a href="{{ post.url }}" class="button is-small is-primary is-light"
+            >Read more</a
+          >
+        </article>
+        {% else %}
+        <p>No posts yet.</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
