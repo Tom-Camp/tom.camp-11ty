@@ -32,6 +32,11 @@ main {
   flex: 1;
 }
 
+a {
+  color: var(--carolina-blue);
+  text-decoration: none;
+}
+
 .navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -54,4 +59,12 @@ main {
 }
 .bg-nc-gold {
   background-color: var(--carolina-gold);
+}
+
+ul.links {
+  list-style-type: none;
+  padding: 0.5rem 0;
+}
+ul.links > li {
+  border-bottom: 1px solid lightgray !important;
 }

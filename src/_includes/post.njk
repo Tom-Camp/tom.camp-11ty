@@ -30,17 +30,23 @@ layout: base.njk
 
       <div class="column is-4">
         <aside>
+          {% if links | length > 0 %}
           <div class="box">
-            <h2 class="title is-5">Lincs</h2>
-            <ul>
-              <li>
-                <i class="fa-xs fa-brands fa-github"></i>
-                <a href="#">Link one</a>
+            <h2 class="title is-5">Links</h2>
+            <ul class="links">
+              {% for link in links %}
+              <li class="my-1">
+                <a
+                  href="{{ link.url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >{{ link.name }}</a
+                >
               </li>
-              <li><a href="#">Link two</a></li>
-              <li><a href="#">Link three</a></li>
+              {% endfor %}
             </ul>
           </div>
+          {% endif %}
         </aside>
       </div>
     </div>

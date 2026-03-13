@@ -2,6 +2,7 @@ const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
   eleventyConfig.addFilter("date", (dateVal, format) => {
