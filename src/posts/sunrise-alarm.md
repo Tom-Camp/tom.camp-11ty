@@ -37,3 +37,17 @@ straightforward and that lamp gently woke us for years. When we moved back to Co
 lamp, getting rid of the old ceiling fixture and just stringing the LEDs up the corner of our bedroom.
 I tweaked the code so that it stared lighting at the bottom of the strip and worked its way for a half-assed
 attempt at simulating a sunrise, and it was okay. Good enough for government work, as they say.
+
+After a few years, I purchased a NeoPixel FeatherWing from Adafruit with the intention of refactoring the
+sunrise alarm clock... again. I built a housing for the Pi which fit a small Ball jar over the Featherwing.
+The jar diffuses the light from the NeoPixels and gives it a nice warm glow. This worked great and I would
+still be using it today if it weren't for my war on Electricity Vampires. I figured that there was no need
+to have the Pi running 24/7 just to turn on the sunrise alarm clock in the morning.
+
+So, I refactored the code to run on a Raspberry Pi Pico W 2 running MicroPython. The Pico uses considerably
+less power than the Pi, and I can put it to sleep when it's not in use. The Pico doesn't have a true
+real-time clock, so I use the `time` module to keep track of time and wake up the Pico at the appropriate
+time to start the sun risin'.
+
+If you are still waking up to blaring music or a buzzing alarm clock, give me a ping. I'd be happy to hook
+you up.

@@ -43,7 +43,12 @@ layout: base.njk
           </a>
           {% endif %} {% if hardware | length > 0 %}
           <div class="box">
-            <h2 class="title is-5">Hardware</h2>
+            <h2 class="title is-5">
+              <span class="icon mr-2">
+                <img src="/img/hardware.svg" alt="Hardware Logo" />
+              </span>
+              Hardware
+            </h2>
             <ul class="links">
               {% for ware in hardware %}
               <li class="my-1">
