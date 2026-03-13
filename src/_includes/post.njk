@@ -28,19 +28,30 @@ layout: base.njk
         </article>
       </div>
 
-      <div class="column is-4">
+      <div class="column is-4 mt-6">
         <aside>
-          {% if links | length > 0 %}
+          {% if repo %}
+          <a href="{{ repo }}" target="_blank" rel="noopener noreferrer">
+            <div class="card p-3 mb-4 is-clickable has-text-centered">
+              <span class="icon mr-2"
+                ><img src="/img/github.svg" alt="GitHub Logo"
+              /></span>
+              <span class="is-size-4 has-text-weight-bold has-text-black-bis"
+                >Code Repository</span
+              >
+            </div>
+          </a>
+          {% endif %} {% if hardware | length > 0 %}
           <div class="box">
-            <h2 class="title is-5">Links</h2>
+            <h2 class="title is-5">Hardware</h2>
             <ul class="links">
-              {% for link in links %}
+              {% for ware in hardware %}
               <li class="my-1">
                 <a
-                  href="{{ link.url }}"
+                  href="{{ ware.url }}"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >{{ link.name }}</a
+                  >{{ ware.name }}</a
                 >
               </li>
               {% endfor %}

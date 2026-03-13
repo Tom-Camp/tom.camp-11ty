@@ -2,9 +2,8 @@
 title: Sunrise Alarm Clock
 description: A sunrise alarm clock using a Raspberry Pi Pico and a NeoPixel block.
 date: 2022-04-10
-links:
-  - name: "Github repository"
-    url: "https://github.com/Tom-Camp/pico-sunrise"
+repo: "https://github.com/Tom-Camp/pico-sunrise"
+hardware:
   - name: "Raspberry Pi Pico 2"
     url: "https://www.raspberrypi.com/products/raspberry-pi-pico-2/"
   - name: "NeoPixel FeatherWing - 4x8"
@@ -18,28 +17,23 @@ topics:
   - NeoPixels
 ---
 
-## Dawn simulation
+I bought my first Raspberry Pi, a Model B, way back in 2012. I didn't know what I was going to do with it,
+but for $35, I figured I'd check it out. I learn best by problem-solving, so I needed a project to work
+through. I had heard about sunrise alarm clocks and really hated my traditional alarm clock, so I decided
+to build a sunrise alarm clock using the Pi. I ordered a strip of LEDs from Adafruit and, since we were
+living in Portland at the time, went to [Hippo Hardware and Trading Post](https://www.hippohardware.com)
+to find a lamp. Now, I'm not sure if Hippo Hardware is still around, but if you are in the market for an
+odd drawer pull, or random doorknob, fancy light fixture, or really just about anything that you could
+attach to or put in your house or business, Hippo Hardware has it. I found an old ceiling lamp that I
+figured I could use for the sunrise alarm clock and away we went.
 
 > Dawn simulation is a technique that involves timing lights, often called wake
 > up lights, sunrise alarm clock or natural light alarm clocks, in the bedroom to
 > come on gradually, over a period of 30 minutes to 2 hours, before awakening to
 > simulate dawn.
 
-The idea is that the gradual increase in light can help to regulate the body's
-circadian rhythm and make waking up feel more natural and less jarring than a
-sudden alarm. The light can also help to suppress the production of melatonin,
-a hormone that makes you feel sleepy, and increase the production of serotonin,a
-hormone that makes you feel awake and alert.
-
-## Implementation
-
-The sunrise alarm clock is implemented using a Raspberry Pi Pico 2. The Pico 2 doesn't
-have a built-in real-time clock (RTC), so the time is kept using the `time` module in
-MicroPython and Network Time Protocol (NTP) to synchronize the time with an NTP server.
-The Pico contains a config file that lists the time to wake for each day of the week.
-After the Pico runs it calculates the time until the next wake time and starts a timer.
-When the timer expires, the dawn simulation starts.
-
-The NeoPixel block is used to create a gradual increase in light intensity over a period,
-starting with 2 pixels and increasing to 32 pixels and then increasing the brightness. The
-process runs for about 30 minutes.
+I programmed the sunrise alarm clock using Python, which at the time I was fairly new to, but it was pretty
+straightforward and that lamp gently woke us for years. When we moved back to Colorado, I refactored the
+lamp, getting rid of the old ceiling fixture and just stringing the LEDs up the corner of our bedroom.
+I tweaked the code so that it stared lighting at the bottom of the strip and worked its way for a half-assed
+attempt at simulating a sunrise, and it was okay. Good enough for government work, as they say.
