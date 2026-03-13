@@ -1,8 +1,25 @@
 /* Custom overrides */
 :root {
-  --bulma-primary-h: 217deg;
-  --bulma-primary-s: 100%;
-  --bulma-primary-l: 20%;
+  --carolina-red-h: 347deg;
+  --carolina-red-s: 90%;
+  --carolina-red-l: 39%;
+  --carolina-red: hsl(
+    var(--carolina-red-h) var(--carolina-red-s) var(--carolina-red-l)
+  );
+
+  --carolina-blue-h: 217deg;
+  --carolina-blue-s: 100%;
+  --carolina-blue-l: 20%;
+  --carolina-blue: hsl(
+    var(--carolina-blue-h) var(--carolina-blue-s) var(--carolina-blue-l)
+  );
+
+  --carolina-gold-h: 48deg;
+  --carolina-gold-s: 100%;
+  --carolina-gold-l: 50%;
+  --carolina-gold: hsl(
+    var(--carolina-gold-h) var(--carolina-gold-s) var(--carolina-gold-l)
+  );
 }
 
 body {
@@ -17,4 +34,24 @@ main {
 
 .navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom colors */
+.text-nc-red {
+  color: var(--carolina-red);
+}
+.text-nc-blue {
+  color: var(--carolina-blue);
+}
+.text-nc-gold {
+  color: var(--carolina-gold);
+}
+.bg-nc-red {
+  background-color: var(--carolina-red);
+}
+.bg-nc-blue {
+  background-color: var(--carolina-blue);
+}
+.bg-nc-gold {
+  background-color: var(--carolina-gold);
 }

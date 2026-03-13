@@ -1,7 +1,25 @@
 ---
-title: Getting Started with 11ty
-description: A quick look at why 11ty is a great choice for personal sites.
-date: 2026-03-10
+title: Sunrise Alarm Clock
+description: A sunrise alarm clock using a Raspberry Pi Pico and a NeoPixel block.
+date: 2022-04-10
+links:
+  [
+    {
+      name: "Github repository",
+      url: "https://github.com/Tom-Camp/pico-sunrise",
+    },
+  ]
+images:
+  [
+    {
+      alt: "Sunrise alarm clock prototype",
+      src: "/img/sunrise-alarm-clock.jpg",
+    },
+  ]
+topics:
+  - Pi Pico
+  - MicroPython
+  - NeoPixels
 ---
 
 [11ty](https://www.11ty.dev/) (Eleventy) is a simple, flexible static site generator. Unlike many frameworks, it stays out of your way.

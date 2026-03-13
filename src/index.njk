@@ -8,7 +8,7 @@ layout: base.njk
     <div class="container">
       <p class="title">Welcome to tom.camp</p>
       <p class="subtitle">A personal site built with 11ty and Bulma</p>
-      <a href="/blog/" class="button is-light is-medium">Read the Blog</a>
+      <a href="/posts/" class="button is-light is-medium">Read the Posts</a>
     </div>
   </div>
 </section>
@@ -18,7 +18,7 @@ layout: base.njk
     <div class="columns is-centered">
       <div class="column is-8">
         <h2 class="title is-3">Recent Posts</h2>
-        {% set recentPosts = collections.blog | reverse | limit(3) %} {% for
+        {% set recentPosts = collections.posts | reverse | limit(3) %} {% for
         post in recentPosts %}
         <div class="box mb-4">
           <p class="has-text-grey is-size-7 mb-1">

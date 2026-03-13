@@ -1,15 +1,15 @@
 ---
-title: Post
+title: Posts
 layout: base.njk
 ---
 
 <section class="section">
   <div class="container">
-    <div class="columns is-centered">
+    <div class="columns">
       <div class="column is-8">
-        <h1 class="title">Blog</h1>
+        <h1 class="title">Posts</h1>
         <hr />
-        {% set posts = collections.blog | reverse %} {% for post in posts %}
+        {% set posts = collections.posts | reverse %} {% for post in posts %}
         <article class="box mb-5">
           <p class="has-text-grey is-size-7 mb-1">
             {{ post.date | date("MMMM d, yyyy") }}
@@ -28,6 +28,7 @@ layout: base.njk
         <p>No posts yet.</p>
         {% endfor %}
       </div>
+      s
     </div>
   </div>
 </section>

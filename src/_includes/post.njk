@@ -16,9 +16,32 @@ layout: base.njk
           {% endif %}
           <hr />
           <div class="content">{{ content | safe }}</div>
+          {% if topics | length > 0 %}
+          <div class="box">
+            {% for topic in topics %}
+            <span class="tag is-medium">{{ topic }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
           <hr />
-          <a href="/blog/" class="button is-light">&larr; Back to Blog</a>
+          <a href="/posts/" class="button is-light">&larr; Back to Posts</a>
         </article>
+      </div>
+
+      <div class="column is-4">
+        <aside>
+          <div class="box">
+            <h2 class="title is-5">Lincs</h2>
+            <ul>
+              <li>
+                <i class="fa-xs fa-brands fa-github"></i>
+                <a href="#">Link one</a>
+              </li>
+              <li><a href="#">Link two</a></li>
+              <li><a href="#">Link three</a></li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </div>
   </div>
