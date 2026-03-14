@@ -6,6 +6,7 @@ layout: base.njk
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
+        {% include "image-slider.njk" %}
         <article>
           <p class="has-text-grey is-size-7 mb-2">
             {{ page.date | date("MMMM d, yyyy") }}
@@ -31,16 +32,21 @@ layout: base.njk
       <div class="column is-4 mt-6">
         <aside>
           {% if repo %}
-          <a href="{{ repo }}" target="_blank" rel="noopener noreferrer">
-            <div class="card p-3 mb-4 is-clickable has-text-centered">
-              <span class="icon mr-2"
-                ><img src="/img/github.svg" alt="GitHub Logo"
-              /></span>
-              <span class="is-size-4 has-text-weight-bold has-text-black-bis"
-                >Code Repository</span
-              >
-            </div>
-          </a>
+          <div class="box">
+            <h2 class="title is-5">
+              <span class="icon mr-2">
+                <img src="/img/github.svg" alt="GitHub Logo" />
+              </span>
+              Git repository
+            </h2>
+            <ul class="links ml-1">
+              <li class="my-1">
+                <a href="{{ repo }}" target="_blank" rel="noopener noreferrer">
+                  {{ repo }}
+                </a>
+              </li>
+            </ul>
+          </div>
           {% endif %} {% if hardware | length > 0 %}
           <div class="box">
             <h2 class="title is-5">
@@ -49,7 +55,7 @@ layout: base.njk
               </span>
               Hardware
             </h2>
-            <ul class="links">
+            <ul class="links ml-1">
               {% for ware in hardware %}
               <li class="my-1">
                 <a

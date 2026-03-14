@@ -9,7 +9,7 @@ hardware:
   - name: "NeoPixel FeatherWing - 4x8"
     url: "https://www.adafruit.com/product/2945"
 images:
-  - src: "/img/sunrise-alarm-clock.jpg"
+  - src: "/img/sunrise_alarm.jpeg"
     alt: "Sunrise alarm clock prototype"
 topics:
   - Pi Pico
@@ -41,7 +41,7 @@ attempt at simulating a sunrise, and it was okay. Good enough for government wor
 After a few years, I purchased a NeoPixel FeatherWing from Adafruit with the intention of refactoring the
 sunrise alarm clock... again. I built a housing for the Pi which fit a small Ball jar over the Featherwing.
 The jar diffuses the light from the NeoPixels and gives it a nice warm glow. This worked great and I would
-still be using it today if it weren't for my war on Electricity Vampires. I figured that there was no need
+still be using it today if it weren't for my War on Electricity Vampires. I figured that there was no need
 to have the Pi running 24/7 just to turn on the sunrise alarm clock in the morning.
 
 So, I refactored the code to run on a Raspberry Pi Pico W 2 running MicroPython. The Pico uses considerably

@@ -2,18 +2,17 @@
 title: NuLay Inn
 description: Who puts a sensor package in a chicken coop!?
 date: 2026-03-01
-links:
-  - name: "Github repository"
-    url: "https://github.com/Tom-Camp/nulayinn"
+repo: "https://github.com/Tom-Camp/nulayinn"
+hardware:
   - name: "Adafruit Feather RP2040 RFM95"
     url: "https://www.adafruit.com/product/5714"
-  - name: "Adafruit BME680 - Temperature, Humidity, Pressure and Gas Sensor"
+  - name: "BME680 - Temp, Humidity, and Gas Sensor"
     url: "https://www.adafruit.com/product/3660"
-  - name: "Adafruit AHT20 - Temperature & Humidity Sensor"
+  - name: "AHT20 - Temp & Humidity Sensor"
     url: "https://www.adafruit.com/product/4566"
 topics:
   - RP2040
-  - RFM95
+  - Chickens
   - LoRa
   - CircuitPython
 ---
