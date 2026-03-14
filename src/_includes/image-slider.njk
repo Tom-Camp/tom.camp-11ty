@@ -1,36 +1,42 @@
 {% if images and images | length > 0 %} {% if images | length == 1 %}
-<figure class="image is-16by9 mb-5">
-  <img
-    src="{{ images[0].src }}"
-    alt="{{ images[0].alt }}"
-    style="object-fit: cover"
-  />
-</figure>
-{% else %}
-<div class="image-slider mb-5">
-  {% for image in images %}
-  <div class="image-slider__slide{% if loop.first %} is-active{% endif %}">
-    <figure class="image is-16by9">
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-16by9 mb-5">
       <img
-        src="{{ image.src }}"
-        alt="{{ image.alt }}"
+        src="{{ images[0].src }}"
+        alt="{{ images[0].alt }}"
         style="object-fit: cover"
       />
     </figure>
+  </div>
+</div>
+{% else %}
+<div class="image-slider mb-5">
+  {% for image in images %}
+  <div class="card image-slider__slide{% if loop.first %} is-active{% endif %}">
+    <div class="card-image">
+      <figure class="image is-16by9">
+        <img
+          src="{{ image.src }}"
+          alt="{{ image.alt }}"
+          style="object-fit: cover"
+        />
+      </figure>
+    </div>
   </div>
   {% endfor %}
   <button class="image-slider__prev" aria-label="Previous slide">
     &#8249;
   </button>
   <button class="image-slider__next" aria-label="Next slide">&#8250;</button>
-  <div class="image-slider__dots">
+  <footer class="image-slider__dots">
     {% for image in images %}
     <button
       class="image-slider__dot{% if loop.first %} is-active{% endif %}"
       aria-label="Go to slide {{ loop.index }}"
     ></button>
     {% endfor %}
-  </div>
+  </footer>
 </div>
 <script>
   (function () {

@@ -6,7 +6,6 @@ layout: base.njk
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
-        {% include "image-slider.njk" %}
         <article>
           <p class="has-text-grey is-size-7 mb-2">
             {{ page.date | date("MMMM d, yyyy") }}
@@ -14,8 +13,7 @@ layout: base.njk
           <h1 class="title">{{ title }}</h1>
           {% if description %}
           <p class="subtitle">{{ description }}</p>
-          {% endif %}
-          <hr />
+          {% endif %} {% include "image-slider.njk" %}
           <div class="content">{{ content | safe }}</div>
           {% if topics | length > 0 %}
           <div class="box">
@@ -25,7 +23,9 @@ layout: base.njk
           </div>
           {% endif %}
           <hr />
-          <a href="/posts/" class="button is-light">&larr; Back to Posts</a>
+          <a href="/projects/" class="button is-light"
+            >&larr; Back to Projectss</a
+          >
         </article>
       </div>
 

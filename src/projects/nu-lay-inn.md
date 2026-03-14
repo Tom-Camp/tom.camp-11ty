@@ -10,6 +10,11 @@ hardware:
     url: "https://www.adafruit.com/product/3660"
   - name: "AHT20 - Temp & Humidity Sensor"
     url: "https://www.adafruit.com/product/4566"
+images:
+  - src: "/img/nulay_mcu.jpeg"
+    alt: "NuLay mcu"
+  - src: "/img/nulay_voc.jpeg"
+    alt: "VOC sensor"
 topics:
   - RP2040
   - Chickens
