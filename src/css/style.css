@@ -37,8 +37,19 @@ a {
   text-decoration: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  a {
+    color: var(--carolina-gold);
+  }
+}
+
 .navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-menu {
+  display: flex !important;
+  box-shadow: none;
 }
 
 /* Custom colors */
