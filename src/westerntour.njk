@@ -1,0 +1,499 @@
+---
+layout: base.njk
+title: Notes on a Western Tour, 1890
+extraHead: '<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">'
+---
+
+<style>
+  /* ── Layout ───────────────────────────────────────────────────── */
+
+  .journey-wrap {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .journey-entries {
+    width: 55%;
+    padding: 2.5rem 3rem 5rem;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .journey-map-pane {
+    width: 45%;
+    position: sticky;
+    top: 52px;
+    height: calc(100vh - 52px);
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ── Intro ────────────────────────────────────────────────────── */
+
+  .journey-intro {
+    padding: 2.5rem 0 3rem;
+    border-bottom: 2px solid #c0103a;
+    margin-bottom: 0.5rem;
+  }
+
+  .journey-intro__eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8a7a60;
+    font-family: system-ui, sans-serif;
+    margin-bottom: 0.75rem;
+  }
+
+  .journey-intro__title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #3d2b1f;
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+  }
+
+  .journey-intro__meta {
+    font-size: 1.05rem;
+    color: #6b5c40;
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  /* ── Entry cards ──────────────────────────────────────────────── */
+
+  .journey-entry {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #d4c9b0;
+  }
+
+  .journey-entry:last-child {
+    border-bottom: none;
+  }
+
+  .journey-entry__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3d2b1f;
+    margin-bottom: 1.25rem;
+    line-height: 1.25;
+  }
+
+  .journey-entry__body p {
+    color: #3d2b1f;
+    line-height: 1.85;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .journey-entry__body p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ── Image slider ─────────────────────────────────────────────── */
+
+  .journey-entry__images {
+    margin-top: 1.75rem;
+  }
+
+  .image-slider figure {
+    margin: 0;
+    background: #1e1a14;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-slider img {
+    max-height: 600px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ── Map overlays ─────────────────────────────────────────────── */
+
+  .map-location-badge {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.93);
+    border: 1px solid #d4c9b0;
+    border-radius: 4px;
+    padding: 0.4rem 1.1rem;
+    font-family: Georgia, serif;
+    font-size: 0.85rem;
+    color: #3d2b1f;
+    z-index: 1000;
+    pointer-events: none;
+    white-space: nowrap;
+    max-width: 88%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  /* ── Appendix ─────────────────────────────────────────────────── */
+
+  .journey-appendix {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #d4c9b0;
+  }
+
+  .journey-appendix__label {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8a7a60;
+    font-family: system-ui, sans-serif;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── Dark mode ────────────────────────────────────────────────── */
+
+  @media (prefers-color-scheme: dark) {
+    .journey-entries {
+      background: #1e1a14;
+    }
+    .journey-entry__title,
+    .journey-intro__title,
+    .journey-entry__body p {
+      color: #e8dcc8;
+    }
+    .journey-entry,
+    .journey-intro {
+      border-color: #3d3020;
+    }
+    .journey-intro__eyebrow,
+    .journey-appendix__label {
+      color: #a09070;
+    }
+    .journey-intro__meta {
+      color: #b0a080;
+    }
+    .journey-appendix {
+      border-color: #3d3020;
+    }
+    .map-location-badge {
+      background: rgba(26, 22, 15, 0.93);
+      border-color: #3d3020;
+      color: #e8dcc8;
+    }
+  }
+
+  /* ── Mobile ───────────────────────────────────────────────────── */
+
+  @media (max-width: 768px) {
+    .journey-wrap {
+      flex-direction: column;
+    }
+    .journey-entries {
+      width: 100%;
+      padding: 1.5rem 1.25rem 4rem;
+      order: 2;
+    }
+    .journey-map-pane {
+      width: 100%;
+      position: sticky;
+      top: 52px;
+      height: 45vw;
+      min-height: 220px;
+      z-index: 100;
+      order: 1;
+    }
+  }
+</style>
+
+<div class="journey-wrap">
+  {# ── Scrollable entries ── #}
+  <div class="journey-entries">
+    <div class="journey-intro">
+      <p class="journey-intro__eyebrow">A travel journal &middot; 1890</p>
+      <h1 class="journey-intro__title">{{ westerntour.title }}</h1>
+      <p class="journey-intro__meta">
+        By {{ westerntour.user }}<br />
+        51 days from Rock Hill, South Carolina to the Pacific and back
+      </p>
+    </div>
+
+    {# Journey entries with coordinates — each triggers a map update #} {% for
+    entry in westerntour.entries %} {% if entry.coords %}
+    <div
+      class="journey-entry"
+      data-lat="{{ entry.coords.lat }}"
+      data-lng="{{ entry.coords.lng }}"
+      data-title="{{ entry.title | escape }}"
+      data-waypoints="{{ entry.waypoints | dump | escape }}"
+    >
+      <h2 class="journey-entry__title">{{ entry.title }}</h2>
+      <div class="journey-entry__body">
+        {{ entry.body | paragraphs | safe }}
+      </div>
+
+      {% if entry.images and entry.images.length > 0 %}
+      <div class="journey-entry__images">
+        <div class="image-slider" data-slider>
+          {% for img in entry.images %}
+          <div
+            class="image-slider__slide{% if loop.first %} is-active{% endif %}"
+          >
+            <figure>
+              <img
+                src="{{ img }}"
+                alt="Journal page {{ loop.index }}"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+          {% endfor %} {% if entry.images.length > 1 %}
+          <button class="image-slider__prev" aria-label="Previous image">
+            &#8249;
+          </button>
+          <button class="image-slider__next" aria-label="Next image">
+            &#8250;
+          </button>
+          <div class="image-slider__dots">
+            {% for img in entry.images %}
+            <button
+              class="image-slider__dot{% if loop.first %} is-active{% endif %}"
+              aria-label="Slide {{ loop.index }}"
+            ></button>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %} {% endfor %} {# Appendix: entries without location data #}
+    <div class="journey-appendix">
+      <p class="journey-appendix__label">Appendix</p>
+      {% for entry in westerntour.entries %} {% if not entry.coords %}
+      <div class="journey-entry">
+        <h2 class="journey-entry__title">{{ entry.title }}</h2>
+        <div class="journey-entry__body">
+          {{ entry.body | paragraphs | safe }}
+        </div>
+        {% if entry.images and entry.images.length > 0 %}
+        <div class="journey-entry__images">
+          <div class="image-slider" data-slider>
+            {% for img in entry.images %}
+            <div
+              class="image-slider__slide{% if loop.first %} is-active{% endif %}"
+            >
+              <figure>
+                <img
+                  src="{{ img }}"
+                  alt="Journal page {{ loop.index }}"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+            {% endfor %} {% if entry.images.length > 1 %}
+            <button class="image-slider__prev" aria-label="Previous image">
+              &#8249;
+            </button>
+            <button class="image-slider__next" aria-label="Next image">
+              &#8250;
+            </button>
+            <div class="image-slider__dots">
+              {% for img in entry.images %}
+              <button
+                class="image-slider__dot{% if loop.first %} is-active{% endif %}"
+                aria-label="Slide {{ loop.index }}"
+              ></button>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+  {# /.journey-entries #} {# ── Sticky map pane ── #}
+  <div class="journey-map-pane">
+    <div id="map"></div>
+    <div class="map-location-badge" id="location-badge">
+      Rock Hill, South Carolina
+    </div>
+  </div>
+</div>
+{# /.journey-wrap #} {# Serialize route for the map script #}
+<script>
+  const ROUTE = [
+    {% for entry in westerntour.entries %}{% if entry.coords %}
+    {% for wp in entry.waypoints %}
+    { lat: {{ wp.coords.lat }}, lng: {{ wp.coords.lng }}, title: {{ wp.title | dump | safe }} },
+    {% endfor %}
+    { lat: {{ entry.coords.lat }}, lng: {{ entry.coords.lng }}, title: {{ entry.title | dump | safe }} },
+    {% endif %}{% endfor %}
+  ];
+</script>
+
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""
+></script>
+
+<script>
+  /* global L, ROUTE */
+  (function () {
+    // ── Init map ────────────────────────────────────────────────────
+    const map = L.map("map", { zoomControl: true, scrollWheelZoom: false });
+
+    L.tileLayer(
+      "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+      {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ' +
+          '&copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: "abcd",
+        maxZoom: 16,
+      },
+    ).addTo(map);
+
+    // ── Build latlng array, deduplicate consecutive identical coords ─
+    const latlngs = ROUTE.map((r) => [r.lat, r.lng]);
+    const deduped = latlngs.filter(
+      (ll, i) =>
+        i === 0 || ll[0] !== latlngs[i - 1][0] || ll[1] !== latlngs[i - 1][1],
+    );
+
+    // ── Dashed route line ────────────────────────────────────────────
+    L.polyline(deduped, {
+      color: "#c0103a",
+      weight: 2,
+      opacity: 0.35,
+      dashArray: "5 6",
+    }).addTo(map);
+
+    // ── Small stop dots along the route ─────────────────────────────
+    deduped.forEach((ll) => {
+      L.circleMarker(ll, {
+        radius: 3.5,
+        fillColor: "#c0103a",
+        color: "#fff",
+        weight: 1.5,
+        fillOpacity: 0.65,
+        interactive: false,
+      }).addTo(map);
+    });
+
+    // ── Current-position marker (larger, always on top) ──────────────
+    const currentMarker = L.circleMarker(latlngs[0], {
+      radius: 9,
+      fillColor: "#c0103a",
+      color: "#fff",
+      weight: 2.5,
+      fillOpacity: 1,
+    }).addTo(map);
+
+    // ── Fit map to full route on load ────────────────────────────────
+    map.fitBounds(L.latLngBounds(deduped).pad(0.1));
+
+    // ── Badge element ────────────────────────────────────────────────
+    const badge = document.getElementById("location-badge");
+
+    // ── Waypoint markers (cleared on each entry change) ──────────────
+    let waypointMarkers = [];
+
+    function moveTo(lat, lng, title, waypoints) {
+      currentMarker.setLatLng([lat, lng]);
+      map.flyTo([lat, lng], 7, { duration: 1.4, easeLinearity: 0.4 });
+      badge.textContent = title;
+
+      waypointMarkers.forEach((m) => m.remove());
+      waypointMarkers = waypoints.map((w) =>
+        L.circleMarker([w.coords.lat, w.coords.lng], {
+          radius: 5,
+          fillColor: "#8a7a60",
+          color: "#fff",
+          weight: 1.5,
+          fillOpacity: 0.85,
+          interactive: true,
+        })
+          .bindTooltip(w.title, { sticky: true })
+          .addTo(map),
+      );
+    }
+
+    // ── Intersection Observer: update map as entries scroll into view ─
+    const entries = document.querySelectorAll(".journey-entry[data-lat]");
+
+    const observer = new IntersectionObserver(
+      (observed) => {
+        observed.forEach((obs) => {
+          if (obs.isIntersecting) {
+            let waypoints = [];
+            try {
+              waypoints = JSON.parse(obs.target.dataset.waypoints || "[]");
+            } catch (_) {
+              waypoints = [];
+            }
+            moveTo(
+              parseFloat(obs.target.dataset.lat),
+              parseFloat(obs.target.dataset.lng),
+              obs.target.dataset.title,
+              waypoints,
+            );
+          }
+        });
+      },
+      {
+        rootMargin: "0px 0px -55% 0px",
+        threshold: 0,
+      },
+    );
+
+    entries.forEach((el) => {
+      observer.observe(el);
+    });
+
+    // ── Invalidate map size after flex layout settles ────────────────
+    setTimeout(() => {
+      map.invalidateSize();
+    }, 0);
+  })();
+</script>
+
+<script>
+  // ── Image sliders ──────────────────────────────────────────────────
+  document.querySelectorAll("[data-slider]").forEach((slider) => {
+    const slides = slider.querySelectorAll(".image-slider__slide");
+    const dots = slider.querySelectorAll(".image-slider__dot");
+    let current = 0;
+
+    function goTo(n) {
+      slides[current].classList.remove("is-active");
+      if (dots[current]) dots[current].classList.remove("is-active");
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add("is-active");
+      if (dots[current]) dots[current].classList.add("is-active");
+    }
+
+    const prev = slider.querySelector(".image-slider__prev");
+    const next = slider.querySelector(".image-slider__next");
+    if (prev)
+      prev.addEventListener("click", () => {
+        goTo(current - 1);
+      });
+    if (next)
+      next.addEventListener("click", () => {
+        goTo(current + 1);
+      });
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => {
+        goTo(i);
+      });
+    });
+  });
+</script>
