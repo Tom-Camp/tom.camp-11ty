@@ -9,15 +9,15 @@
       "location": "POINT (-81.0295357 34.927908)",
       "images": [
         {
-          "src": "/img/tour/willie.jpg",
+          "src": "/img/tour/willie.webp",
           "caption": "Willie R. Miller, Rock Hill, SC"
         },
         {
-          "src": "/img/tour/front_cover.png",
+          "src": "/img/tour/front_cover.webp",
           "caption": "The well-traveled, tattered journal"
         },
         {
-          "src": "/img/tour/page001.png"
+          "src": "/img/tour/page001.webp"
         }
       ]
     },
@@ -28,7 +28,7 @@
       "location": "POINT (-80.4742261 35.6709727)",
       "images": [
         {
-          "src": "/img/tour/page002.png"
+          "src": "/img/tour/page002.webp"
         }
       ]
     },
@@ -49,13 +49,13 @@
       ],
       "images": [
         {
-          "src": "/img/tour/page003.png"
+          "src": "/img/tour/page003.webp"
         },
         {
-          "src": "/img/tour/page004.png"
+          "src": "/img/tour/page004.webp"
         },
         {
-          "src": "/img/tour/Palace-HotelKnoxville.jpg",
+          "src": "/img/tour/Palace-HotelKnoxville.webp",
           "caption": "The Palace Hotel, Knoxville, Tennessee"
         }
       ]
@@ -67,23 +67,23 @@
       "location": "POINT (-84.5524358 35.9339638)",
       "images": [
         {
-          "src": "/img/tour/harriman_temperance_u.jpg",
-            "caption": "Harriman Temperance University (now the city hall)"
+          "src": "/img/tour/harriman_temperance_u.webp",
+          "caption": "Harriman Temperance University (now the city hall)"
         },
         {
-          "src": "/img/tour/page004.png"
+          "src": "/img/tour/page004.webp"
         },
         {
-          "src": "/img/tour/page005.png"
+          "src": "/img/tour/page005.webp"
         },
         {
-          "src": "/img/tour/page006.png"
+          "src": "/img/tour/page006.webp"
         },
         {
-          "src": "/img/tour/page007.png"
+          "src": "/img/tour/page007.webp"
         },
         {
-          "src": "/img/tour/roane-street.jpg",
+          "src": "/img/tour/roane-street.webp",
           "caption": "Roane Street commercial block built in 1890"
         }
       ]
@@ -105,10 +105,10 @@
       ],
       "images": [
         {
-          "src": "/img/tour/page007.png"
+          "src": "/img/tour/page007.webp"
         },
         {
-          "src": "/img/tour/page008.png"
+          "src": "/img/tour/page008.webp"
         }
       ]
     },
@@ -119,20 +119,20 @@
       "location": "POINT (-87.6297982 41.8781136)",
       "images": [
         {
-          "src": "/img/tour/Auditorium_Building_Chicago.jpg",
+          "src": "/img/tour/Auditorium_Building_Chicago.webp",
           "caption": "The Auditorium Building, Chicago, Illinois"
         },
         {
-          "src": "/img/tour/page009.png"
+          "src": "/img/tour/page009.webp"
         },
         {
-          "src": "/img/tour/page010.png"
+          "src": "/img/tour/page010.webp"
         },
         {
-          "src": "/img/tour/page011.png"
+          "src": "/img/tour/page011.webp"
         },
         {
-          "src": "/img/tour/page012.png"
+          "src": "/img/tour/page012.webp"
         }
       ]
     },
@@ -153,17 +153,17 @@
       ],
       "images": [
         {
-          "src": "/img/tour/stanthony_falls.jpg",
-            "caption": "The falls of St. Anthony, Minnesota railroad crossing, 1890"
+          "src": "/img/tour/stanthony_falls.webp",
+          "caption": "The falls of St. Anthony, Minnesota railroad crossing, 1890"
         },
         {
-          "src": "/img/tour/page012.png"
+          "src": "/img/tour/page012.webp"
         },
         {
-          "src": "/img/tour/page013.png"
+          "src": "/img/tour/page013.webp"
         },
         {
-          "src": "/img/tour/page014.png"
+          "src": "/img/tour/page014.webp"
         }
       ]
     },
@@ -184,29 +184,29 @@
       ],
       "images": [
         {
-          "src": "/img/tour/1889Bismark.jpg",
+          "src": "/img/tour/1889Bismark.webp",
           "caption": "1889 Constitutional Convention Parade, Bismark, North Dakota"
         },
         {
-          "src": "/img/tour/page014.png"
+          "src": "/img/tour/page014.webp"
         },
         {
-          "src": "/img/tour/page015.png"
+          "src": "/img/tour/page015.webp"
         },
         {
-          "src": "/img/tour/page016.png"
+          "src": "/img/tour/page016.webp"
         },
         {
-          "src": "/img/tour/page017.png"
+          "src": "/img/tour/page017.webp"
         },
         {
-          "src": "/img/tour/page018.png"
+          "src": "/img/tour/page018.webp"
         },
         {
-          "src": "/img/tour/page019.png"
+          "src": "/img/tour/page019.webp"
         },
         {
-          "src": "/img/tour/page020.png"
+          "src": "/img/tour/page020.webp"
         }
       ]
     },
@@ -243,18 +243,18 @@
       ],
       "images": [
         {
-          "src": "/img/tour/yellowstone_wagon.jpg",
+          "src": "/img/tour/yellowstone_wagon.webp",
           "caption": "Tally-ho wagon in Yellowstone National Park, Montana"
         },
         {
-          "src": "/img/tour/page020.png",
+          "src": "/img/tour/page020.webp",
           "caption": "Wildflower from the Yellowstone Valley pressed in the journal pages"
         },
         {
-          "src": "/img/tour/page021.png"
+          "src": "/img/tour/page021.webp"
         },
         {
-          "src": "/img/tour/page022.png"
+          "src": "/img/tour/page022.webp"
         }
       ]
     },
@@ -271,23 +271,23 @@
       ],
       "images": [
         {
-          "src": "/img/tour/spokane_falls.jpg",
+          "src": "/img/tour/spokane_falls.webp",
           "caption": "Spokane Falls, Spokane, Washington circa 1890"
         },
         {
-          "src": "/img/tour/page022.png"
+          "src": "/img/tour/page022.webp"
         },
         {
-          "src": "/img/tour/page023.png"
+          "src": "/img/tour/page023.webp"
         },
         {
-          "src": "/img/tour/page024.png"
+          "src": "/img/tour/page024.webp"
         },
         {
-          "src": "/img/tour/page025.png"
+          "src": "/img/tour/page025.webp"
         },
         {
-          "src": "/img/tour/page026.png"
+          "src": "/img/tour/page026.webp"
         }
       ]
     },
@@ -308,17 +308,17 @@
       ],
       "images": [
         {
-          "src": "/img/tour/coulee.jpeg",
+          "src": "/img/tour/coulee.webp",
           "caption": "Washtucna Coulee, on the way to Pasco, Washington"
         },
         {
-          "src": "/img/tour/page026.png"
+          "src": "/img/tour/page026.webp"
         },
         {
-          "src": "/img/tour/page027.png"
+          "src": "/img/tour/page027.webp"
         },
         {
-          "src": "/img/tour/page028.png"
+          "src": "/img/tour/page028.webp"
         }
       ]
     },
@@ -335,17 +335,21 @@
       ],
       "images": [
         {
-          "src": "/img/tour/tacoma1890.jpeg",
+          "src": "/img/tour/tacoma1890.webp",
           "caption": "Tacoma, Washington, circa 1890"
         },
         {
-          "src": "/img/tour/page028.png"
+          "src": "/img/tour/fifehotel.webp",
+          "caption": "The Fife Hotel, Tacoma, Washington, circa 1888"
         },
         {
-          "src": "/img/tour/page029.png"
+          "src": "/img/tour/page028.webp"
         },
         {
-          "src": "/img/tour/page030.png"
+          "src": "/img/tour/page029.webp"
+        },
+        {
+          "src": "/img/tour/page030.webp"
         }
       ]
     },
@@ -356,25 +360,37 @@
       "location": "POINT (-122.4442906 47.2528768)",
       "images": [
         {
-          "src": "/img/tour/page030.png"
+          "src": "/img/tour/annie_wright_seminary.webp",
+          "caption": "Annie Wright Seminary, Tacoma, Washington, circa 1890"
         },
         {
-          "src": "/img/tour/page031.png"
+          "src": "/img/tour/annie_wright.webp",
+          "caption": "Annie Wright Seminary with Mt. Rainier in the background."
         },
         {
-          "src": "/img/tour/page032.png"
+          "src": "/img/tour/seattle_fire.webp",
+          "caption": "After the Great Seattle Fire, June 6, 1889"
         },
         {
-          "src": "/img/tour/page033.png"
+          "src": "/img/tour/page030.webp"
         },
         {
-          "src": "/img/tour/page034.png"
+          "src": "/img/tour/page031.webp"
         },
         {
-          "src": "/img/tour/page035.png"
+          "src": "/img/tour/page032.webp"
         },
         {
-          "src": "/img/tour/page124.png"
+          "src": "/img/tour/page033.webp"
+        },
+        {
+          "src": "/img/tour/page034.webp"
+        },
+        {
+          "src": "/img/tour/page035.webp"
+        },
+        {
+          "src": "/img/tour/page124.webp"
         }
       ]
     },
@@ -385,13 +401,17 @@
       "location": "POINT (-122.6762071 45.5234515)",
       "images": [
         {
-          "src": "/img/tour/page035.png"
+          "src": "/img/tour/portland_heights.webp",
+          "caption": "Cable cars to Portland Heights, circa 1890"
         },
         {
-          "src": "/img/tour/page036.png"
+          "src": "/img/tour/page035.webp"
         },
         {
-          "src": "/img/tour/page037.png"
+          "src": "/img/tour/page036.webp"
+        },
+        {
+          "src": "/img/tour/page037.webp"
         }
       ]
     },
@@ -408,16 +428,16 @@
       ],
       "images": [
         {
-          "src": "/img/tour/page037.png"
+          "src": "/img/tour/page037.webp"
         },
         {
-          "src": "/img/tour/page038.png"
+          "src": "/img/tour/page038.webp"
         },
         {
-          "src": "/img/tour/page039.png"
+          "src": "/img/tour/page039.webp"
         },
         {
-          "src": "/img/tour/page123.png"
+          "src": "/img/tour/page123.webp"
         }
       ]
     },
@@ -428,10 +448,14 @@
       "location": "POINT (-122.6762071 45.5234515)",
       "images": [
         {
-          "src": "/img/tour/page039.png"
+            "src": "/img/tour/gold_five.webp",
+          "caption": "Found $5 gold piece, worth more $1,000 today"
         },
         {
-          "src": "/img/tour/page040.png"
+          "src": "/img/tour/page039.webp"
+        },
+        {
+          "src": "/img/tour/page040.webp"
         }
       ]
     },
@@ -456,28 +480,36 @@
       ],
       "images": [
         {
-          "src": "/img/tour/page041.png"
+          "src": "/img/tour/siskiyou.webp",
+          "caption": "A passenger train with Mt. Shasta in the background, Siskiyou, CA, circa 1900"
         },
         {
-          "src": "/img/tour/page042.png"
+          "src": "/img/tour/tubbs_hotel.webp",
+          "caption": "Tubbs Hotel, Oakland, California, circa 1890"
         },
         {
-          "src": "/img/tour/page043.png"
+          "src": "/img/tour/page041.webp"
         },
         {
-          "src": "/img/tour/page044.png"
+          "src": "/img/tour/page042.webp"
         },
         {
-          "src": "/img/tour/page045.png"
+          "src": "/img/tour/page043.webp"
         },
         {
-          "src": "/img/tour/page046.png"
+          "src": "/img/tour/page044.webp"
         },
         {
-          "src": "/img/tour/page047.png"
+          "src": "/img/tour/page045.webp"
         },
         {
-          "src": "/img/tour/front_cover_inner.png"
+          "src": "/img/tour/page046.webp"
+        },
+        {
+          "src": "/img/tour/page047.webp"
+        },
+        {
+          "src": "/img/tour/front_cover_inner.webp"
         }
       ]
     },
@@ -498,16 +530,24 @@
       ],
       "images": [
         {
-          "src": "/img/tour/page047.png"
+          "src": "/img/tour/Golden-Gate-Park-map-1892.webp",
+          "caption": "Golden Gater Park, circa 1892"
         },
         {
-          "src": "/img/tour/page048.png"
+          "src": "/img/tour/lick_observatory.webp",
+          "caption": "Lick Observatory, San Jose, California, circa 1890"
         },
         {
-          "src": "/img/tour/page049.png"
+          "src": "/img/tour/page047.webp"
         },
         {
-          "src": "/img/tour/page050.png"
+          "src": "/img/tour/page048.webp"
+        },
+        {
+          "src": "/img/tour/page049.webp"
+        },
+        {
+          "src": "/img/tour/page050.webp"
         }
       ]
     },
@@ -528,22 +568,26 @@
       ],
       "images": [
         {
-          "src": "/img/tour/page051.png"
+            "src": "/img/tour/cliffhouse.webp",
+            "caption": "Cliff House at Sutro Heights, San Francisco, California, circa 1890"
         },
         {
-          "src": "/img/tour/page052.png"
+          "src": "/img/tour/page051.webp"
         },
         {
-          "src": "/img/tour/page053.png"
+          "src": "/img/tour/page052.webp"
         },
         {
-          "src": "/img/tour/page054.png"
+          "src": "/img/tour/page053.webp"
         },
         {
-          "src": "/img/tour/page055.png"
+          "src": "/img/tour/page054.webp"
         },
         {
-          "src": "/img/tour/page056.png"
+          "src": "/img/tour/page055.webp"
+        },
+        {
+          "src": "/img/tour/page056.webp"
         }
       ]
     },
@@ -564,13 +608,17 @@
       ],
       "images": [
         {
-          "src": "/img/tour/page057.png"
+          "src": "/img/tour/alameda_baths.webp",
+          "caption": "Newport Baths, Alameda, California, circa 1890"
         },
         {
-          "src": "/img/tour/page058.png"
+          "src": "/img/tour/page057.webp"
         },
         {
-          "src": "/img/tour/page059.png"
+          "src": "/img/tour/page058.webp"
+        },
+        {
+          "src": "/img/tour/page059.webp"
         }
       ]
     },
@@ -581,37 +629,41 @@
       "location": "POINT (-122.4077914 37.7941378)",
       "images": [
         {
-          "src": "/img/tour/page059.png"
+          "src": "/img/tour/dupont_jackson.webp",
+          "caption": "Corner of Dupont Street and Jackson Street, Chinatown, San Francisco, circa 1890"
         },
         {
-          "src": "/img/tour/page060.png"
+          "src": "/img/tour/page125.webp"
         },
         {
-          "src": "/img/tour/page061.png"
+          "src": "/img/tour/page126.webp"
         },
         {
-          "src": "/img/tour/page062.png"
+          "src": "/img/tour/page059.webp"
         },
         {
-          "src": "/img/tour/page063.png"
+          "src": "/img/tour/page060.webp"
         },
         {
-          "src": "/img/tour/page064.png"
+          "src": "/img/tour/page061.webp"
         },
         {
-          "src": "/img/tour/page065.png"
+          "src": "/img/tour/page062.webp"
         },
         {
-          "src": "/img/tour/page066.png"
+          "src": "/img/tour/page063.webp"
         },
         {
-          "src": "/img/tour/page067.png"
+          "src": "/img/tour/page064.webp"
         },
         {
-          "src": "/img/tour/page125.png"
+          "src": "/img/tour/page065.webp"
         },
         {
-          "src": "/img/tour/page126.png"
+          "src": "/img/tour/page066.webp"
+        },
+        {
+          "src": "/img/tour/page067.webp"
         }
       ]
     },
@@ -622,16 +674,16 @@
       "location": "POINT (-122.2711137 37.8043637)",
       "images": [
         {
-          "src": "/img/tour/page067.png"
+          "src": "/img/tour/page067.webp"
         },
         {
-          "src": "/img/tour/page068.png"
+          "src": "/img/tour/page068.webp"
         },
         {
-          "src": "/img/tour/page069.png"
+          "src": "/img/tour/page069.webp"
         },
         {
-          "src": "/img/tour/page070.png"
+          "src": "/img/tour/page070.webp"
         }
       ]
     },
@@ -642,22 +694,26 @@
       "location": "POINT (-122.2711137 37.8043637)",
       "images": [
         {
-          "src": "/img/tour/page070.png"
+          "src": "/img/tour/palace_hotel_sf.webp",
+          "caption": "Palace Hotel, San Francisco, circa 1890"
         },
         {
-          "src": "/img/tour/page071.png"
+          "src": "/img/tour/page070.webp"
         },
         {
-          "src": "/img/tour/page072.png"
+          "src": "/img/tour/page071.webp"
         },
         {
-          "src": "/img/tour/page073.png"
+          "src": "/img/tour/page072.webp"
         },
         {
-          "src": "/img/tour/page074.png"
+          "src": "/img/tour/page073.webp"
         },
         {
-          "src": "/img/tour/page127.png"
+          "src": "/img/tour/page074.webp"
+        },
+        {
+          "src": "/img/tour/page127.webp"
         }
       ]
     },
@@ -714,70 +770,86 @@
       ],
       "images": [
         {
-          "src": "/img/tour/page075.png"
+          "src": "/img/tour/mormon_temple.webp",
+          "caption": "Mormon Temple and Tabernacle, Salt Lake City, Utah, circa 1890"
         },
         {
-          "src": "/img/tour/page076.png"
+          "src": "/img/tour/garfield_beach.webp",
+          "caption": "Garfield Beach, Great Salt Lake, Utah, circa 1890"
         },
         {
-          "src": "/img/tour/page077.png"
+          "src": "/img/tour/eagle_gate.webp",
+            "caption": "Eagle Gate, Salt Lake City, Utah, circa 1890"
         },
         {
-          "src": "/img/tour/page078.png"
+          "src": "/img/tour/gardo_house.webp",
+          "caption": "Gardo House, the official residence of the president of The Church of Jesus Christ of Latter-day Saints, Salt Lake City, Utah, circa 1879"
         },
         {
-          "src": "/img/tour/page079.png"
+          "src": "/img/tour/page075.webp"
         },
         {
-          "src": "/img/tour/page080.png"
+          "src": "/img/tour/page076.webp"
         },
         {
-          "src": "/img/tour/page081.png"
+          "src": "/img/tour/page077.webp"
         },
         {
-          "src": "/img/tour/page082.png"
+          "src": "/img/tour/page078.webp"
         },
         {
-          "src": "/img/tour/page083.png"
+          "src": "/img/tour/page079.webp"
         },
         {
-          "src": "/img/tour/page084.png"
+          "src": "/img/tour/page080.webp"
         },
         {
-          "src": "/img/tour/page085.png"
+          "src": "/img/tour/page081.webp"
         },
         {
-          "src": "/img/tour/page086.png"
+          "src": "/img/tour/page082.webp"
         },
         {
-          "src": "/img/tour/page087.png"
+          "src": "/img/tour/page083.webp"
         },
         {
-          "src": "/img/tour/page088.png"
+          "src": "/img/tour/page084.webp"
         },
         {
-          "src": "/img/tour/page089.png"
+          "src": "/img/tour/page085.webp"
         },
         {
-          "src": "/img/tour/page090.png"
+          "src": "/img/tour/page086.webp"
         },
         {
-          "src": "/img/tour/page091.png"
+          "src": "/img/tour/page087.webp"
         },
         {
-          "src": "/img/tour/page092.png"
+          "src": "/img/tour/page088.webp"
         },
         {
-          "src": "/img/tour/page093.png"
+          "src": "/img/tour/page089.webp"
         },
         {
-          "src": "/img/tour/page094.png"
+          "src": "/img/tour/page090.webp"
         },
         {
-          "src": "/img/tour/page095.png"
+          "src": "/img/tour/page091.webp"
         },
         {
-          "src": "/img/tour/page096.png"
+          "src": "/img/tour/page092.webp"
+        },
+        {
+          "src": "/img/tour/page093.webp"
+        },
+        {
+          "src": "/img/tour/page094.webp"
+        },
+        {
+          "src": "/img/tour/page095.webp"
+        },
+        {
+          "src": "/img/tour/page096.webp"
         }
       ]
     },
@@ -822,34 +894,54 @@
       ],
       "images": [
         {
-          "src": "/img/tour/page096.png"
+          "src": "/img/tour/castle_gate.webp",
+          "caption": "Castle Gate, Utah"
         },
         {
-          "src": "/img/tour/page097.png"
+          "src": "/img/tour/black_canyon.webp",
+          "caption": "A Denver and Rio Grande train on tracks beside the Gunnison River in the Black Canyon of the Gunnison"
         },
         {
-          "src": "/img/tour/page098.png"
+          "src": "/img/tour/curecanti_needle.webp",
+          "caption": "Curecanti Needle, Colorado"
+        },
+         {
+          "src": "/img/tour/marshall_pass.webp",
+          "caption": "Marshall Pass, Colorado"
         },
         {
-          "src": "/img/tour/page099.png"
+          "src": "/img/tour/royal_gorge.webp",
+          "caption": "Royal Gorge, Colorado"
         },
         {
-          "src": "/img/tour/page100.png"
+          "src": "/img/tour/page096.webp"
         },
         {
-          "src": "/img/tour/colo.png"
+          "src": "/img/tour/page097.webp"
         },
         {
-          "src": "/img/tour/page101.png"
+          "src": "/img/tour/page098.webp"
         },
         {
-          "src": "/img/tour/page102.png"
+          "src": "/img/tour/page099.webp"
         },
         {
-          "src": "/img/tour/page103.png"
+          "src": "/img/tour/page100.webp"
         },
         {
-          "src": "/img/tour/glenarm.jpeg"
+          "src": "/img/tour/colo.webp"
+        },
+        {
+          "src": "/img/tour/page101.webp"
+        },
+        {
+          "src": "/img/tour/page102.webp"
+        },
+        {
+          "src": "/img/tour/page103.webp"
+        },
+        {
+          "src": "/img/tour/glenarm.webp"
         }
       ]
     },
@@ -878,16 +970,24 @@
       ],
       "images": [
         {
-          "src": "/img/tour/page103.png"
+          "src": "/img/tour/tabor_grand.webp",
+          "caption": "Tabor Grand Opera House, Denver, Colorado, circa 1890"
         },
         {
-          "src": "/img/tour/page104.png"
+          "src": "/img/tour/elitch_garden.webp",
+          "caption": "Elitch Gardens, Denver, Colorado, circa 1890"
         },
         {
-          "src": "/img/tour/page105.png"
+          "src": "/img/tour/page103.webp"
         },
         {
-          "src": "/img/tour/page106.png"
+          "src": "/img/tour/page104.webp"
+        },
+        {
+          "src": "/img/tour/page105.webp"
+        },
+        {
+          "src": "/img/tour/page106.webp"
         }
       ]
     },
@@ -912,16 +1012,20 @@
       ],
       "images": [
         {
-          "src": "/img/tour/page106.png"
+          "src": "/img/tour/childress.webp",
+          "caption": "Main Street, Childress, Texas, circa 1890"
         },
         {
-          "src": "/img/tour/page107.png"
+          "src": "/img/tour/page106.webp"
         },
         {
-          "src": "/img/tour/page108.png"
+          "src": "/img/tour/page107.webp"
         },
         {
-          "src": "/img/tour/page109.png"
+          "src": "/img/tour/page108.webp"
+        },
+        {
+          "src": "/img/tour/page109.webp"
         }
       ]
     },
@@ -934,41 +1038,29 @@
         {
           "title": "Cleburne, Texas",
           "location": "POINT (-97.3867 32.3471)"
-        },
-        {
-          "title": "Spring Palace, Fort Worth, Texas",
-          "location": "POINT (-97.3308 32.7555)"
-        },
-        {
-          "title": "Talbot's House, Fort Worth, Texas",
-          "location": "POINT (-97.3308 32.7555)"
-        },
-        {
-          "title": "Ross's House, Fort Worth, Texas",
-          "location": "POINT (-97.3308 32.7555)"
         }
       ],
       "images": [
         {
-          "src": "/img/tour/page109.png"
+          "src": "/img/tour/page109.webp"
         },
         {
-          "src": "/img/tour/page110.png"
+          "src": "/img/tour/page110.webp"
         },
         {
-          "src": "/img/tour/page111.png"
+          "src": "/img/tour/page111.webp"
         },
         {
-          "src": "/img/tour/page112.png"
+          "src": "/img/tour/page112.webp"
         },
         {
-          "src": "/img/tour/page113.png"
+          "src": "/img/tour/page113.webp"
         },
         {
-          "src": "/img/tour/page114.png"
+          "src": "/img/tour/page114.webp"
         },
         {
-          "src": "/img/tour/page128.png"
+          "src": "/img/tour/page128.webp"
         }
       ]
     },
@@ -987,7 +1079,7 @@
           "location": "POINT (-90.0000 30.0000)"
         },
         {
-          "title": "Hotel Vanderbank, New Orleans, Louisiana",
+          "title": "Hotel Vonderbank, New Orleans, Louisiana",
           "location": "POINT (-90.0715 29.9511)"
         },
         {
@@ -1001,33 +1093,41 @@
         {
           "title": "Jackson Square, New Orleans, Louisiana",
           "location": "POINT (-90.0715 29.9511)"
-        },
-        {
-          "title": "Pescud's House, New Orleans, Louisiana",
-          "location": "POINT (-90.0715 29.9511)"
         }
       ],
       "images": [
         {
-          "src": "/img/tour/page114.png"
+          "src": "/img/tour/vonderbank.webp",
+          "caption": "Hotel Vonderbank, New Orleans, Louisiana, circa 1890"
         },
         {
-          "src": "/img/tour/page115.png"
+          "src": "/img/tour/french_market.webp",
+          "caption": "French Market, New Orleans, Louisiana, circa 1890"
         },
         {
-          "src": "/img/tour/page116.png"
+          "src": "/img/tour/jackson_square.webp",
+          "caption": "Jackson Square, New Orleans, Louisiana, circa 1890"
         },
         {
-          "src": "/img/tour/page117.png"
+          "src": "/img/tour/page114.webp"
         },
         {
-          "src": "/img/tour/page118.png"
+          "src": "/img/tour/page115.webp"
         },
         {
-          "src": "/img/tour/page119.png"
+          "src": "/img/tour/page116.webp"
         },
         {
-          "src": "/img/tour/page120.png"
+          "src": "/img/tour/page117.webp"
+        },
+        {
+          "src": "/img/tour/page118.webp"
+        },
+        {
+          "src": "/img/tour/page119.webp"
+        },
+        {
+          "src": "/img/tour/page120.webp"
         }
       ]
     },
@@ -1056,13 +1156,13 @@
       ],
       "images": [
         {
-          "src": "/img/tour/page120.png"
+          "src": "/img/tour/page120.webp"
         },
         {
-          "src": "/img/tour/page121.png"
+          "src": "/img/tour/page121.webp"
         },
         {
-          "src": "/img/tour/page122.png"
+          "src": "/img/tour/page122.webp"
         }
       ]
     },
@@ -1080,7 +1180,7 @@
       "location": "",
       "images": [
         {
-          "src": "/img/tour/back_cover_inner.png"
+          "src": "/img/tour/back_cover_inner.webp"
         }
       ]
     }
