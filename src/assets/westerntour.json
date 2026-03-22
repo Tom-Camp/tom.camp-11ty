@@ -116,6 +116,8 @@
         "waypoints": [
           { "title": "Glendive, Montana", "location": "POINT (-104.711524 47.122998)" },
           { "title": "Livingston, Montana", "location": "POINT (-110.5000 45.6667)" },
+          { "title": "Yellowstone National Park, Montana", "location": "POINT (-110.5885 44.4279)" },
+          { "title": "Livingston, Montana", "location": "POINT (-110.5000 45.6667)" },
           { "title": "Gallatin, Montana", "location": "POINT (-111.0421 45.6769)" },
           { "title": "Helena, Montana", "location": "POINT (-112.0270 46.5958)" }
         ],

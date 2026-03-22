@@ -370,7 +370,7 @@ extraHead: '<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/le
     L.polyline(deduped, {
       color: "#c0103a",
       weight: 2,
-      opacity: 0.35,
+      opacity: 0.95,
       dashArray: "5 6",
     }).addTo(map);
 
@@ -413,7 +413,7 @@ extraHead: '<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/le
       waypointMarkers = waypoints.map((w) =>
         L.circleMarker([w.coords.lat, w.coords.lng], {
           radius: 5,
-          fillColor: "#8a7a60",
+          fillColor: "#ffde00",
           color: "#fff",
           weight: 1.5,
           fillOpacity: 0.85,
