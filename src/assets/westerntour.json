@@ -3,13 +3,6 @@
   "user": "Willie R. Miller",
   "entries": [
     {
-      "title": "Introduction",
-      "date": "Mon, 08/24/2015 - 17:31",
-      "body": "In the summer of 2015 an old journal arrived in the mail. It was dry and cracking and needed to be handled with care. The journal was my Great Grandmother Willie Robards Miller's hand-written journal from a trip she had taken in 1890 with her sister Isabella Hinton Miller, Isabella's husband, William Blackburn Wilson, Jr., their seven children and a nanny. The trip lasted 51 days as they took a train from South Carolina to Chicago, across to Tacoma, down to Oakland, back across to Salt Lake City, down to Denver and back to South Carolina via Fort Worth and New Orleans. As I photographed and then deciphered the handwriting, it became apparent what an amazing trip it had been, from The Auditorium in Chicago to touring Yellowstone National Park a mere 18 years after it had been established, to Seattle a year after the great fire and the alien world of San Francisco's Chinatown. The tour took them to the Great Salt Lake, the Black Canyon of the Gunnison and over the Royal Gorge. An incredible journey at any time, but doubly so for 1890.\n\nCast of Characters\n\nWillie Robards Miller\n\nMy great-grandmother and author of the journal. Willie was 29 when she left to go on this journey.\n\nWilliam Blackburn Wilson, Jr.\n\nWilliam was Willie's brother-in-law. He was 40 at the time of the trip. He and his wife, Isabella, with the help of a nurse, brought their seven children, the youngest around a year old, on the cross country trip.\n\nIsabella Hinton Miller\n\nWillie's sister and William's wife. She was 33 at the time of the trip.\n\nThe children\n\nArrah Isabella - 14 years old\n\tWilliam Blackburn, III - 12 years old\n\tFrances Blackburn - 10 years old\n\tOscar Britton - 8 years old\n\tWilliam Miller - 6 years old\n\tMargaret - 3 years old\n\tLoulie Meriwether - 1 year old\n \n\nJames Lowry Wilson\n\nWilliam's brother. The traveling party met up with Jim in Denver.\n",
-      "location": "",
-      "images": []
-    },
-    {
       "title": "Notes on a Western Tour",
       "date": "Mon, 06/06/1890 - 11:12",
       "body": "Notes on a Western Tour taken by W.B. Wilson, Jr., Mrs. W.B. Wilson, Jr., their seven children and nurse, Willie R. Miller, all of Rock Hill, South Carolina.\n\nLeft Rock Hill, S.C. June 6th, 1890\n\nReturned to Yorkville, S.C. July 26th, 1890",
@@ -45,7 +38,7 @@
       {
         "title": "Day 3 - Harriman, Tennessee",
         "date": "Wed, 06/08/1890 - 15:14",
-        "body": "After a fine night's rest at the Palace Hotel we left Knoxville at 8:30 this morning. We made the train by \u201cthe skin of our teeth\u201d as the buss left us and we had to dash wildly for the depot on foot. Fortunately it was only 3 blocks off, but with 7 small children to drag and our hand baggage consisting of 3 large valises, a ponderous [unknown]\u2020 strap, 2 mammoth lunch baskets, and 2 grips, we must have presented a spectacle in truth. After a tiresome hot ride of 3 hours on a miserable old \u201caccommodation\u201d train, we reached a little station called Keathley to find the schedule had change only that morning and our train had passed by 2 hours before. We could have howled with rage. After camping out on our luggage an or two, we finally decided to spend the day at a new town 1 \u00bd miles distant. Harriman is a most wonderful town - only 2 or 3 months old - it has cut its wisdom teeth most decidedly - has 3,000 inhabitants, electric lights, dummy line of cars, handsome business houses and residences, and a $100,000 hotel going up. We met people there from Michigan to Florida. And they continued to pour in. The place is entirely surrounded by majestic mountains and skirting their base, making the valley a peninsula, is a lonely little river Emory. The discovery of coal and iron in the mountains has caused the impetus. A land syndicate was formed, an auction advertised for March 23rd. And in 2 days times $600,000 worth of land sold, lots going from $60 to $275 a front foot. The place has been built form the ground up since that date. It is called the Temperance City for by some reason in the deeds to land spiritous liquors can never be sold here. Our experience here has been a most novel one and we have really enjoyed our day. We take the train at 8:30 tonight.\n\n\u2020View on image file pag4.png",
+        "body": "After a fine night's rest at the Palace Hotel we left Knoxville at 8:30 this morning. We made the train by \u201cthe skin of our teeth\u201d as the buss left us and we had to dash wildly for the depot on foot. Fortunately it was only 3 blocks off, but with 7 small children to drag and our hand baggage consisting of 3 large valises, a ponderous [unknown]\u2020 strap, 2 mammoth lunch baskets, and 2 grips, we must have presented a spectacle in truth. After a tiresome hot ride of 3 hours on a miserable old \u201caccommodation\u201d train, we reached a little station called Keathley to find the schedule had change only that morning and our train had passed by 2 hours before. We could have howled with rage. After camping out on our luggage an hour or two, we finally decided to spend the day at a new town 1 \u00bd miles distant. Harriman is a most wonderful town - only 2 or 3 months old - it has cut its wisdom teeth most decidedly - has 3,000 inhabitants, electric lights, dummy line of cars, handsome business houses and residences, and a $100,000 hotel going up. We met people there from Michigan to Florida. And they continued to pour in. The place is entirely surrounded by majestic mountains and skirting their base, making the valley a peninsula, is a lonely little river Emory. The discovery of coal and iron in the mountains has caused the impetus. A land syndicate was formed, an auction advertised for March 23rd. And in 2 days times $600,000 worth of land sold, lots going from $60 to $275 a front foot. The place has been built from the ground up since that date. It is called the Temperance City for by some reason in the deeds to land spiritous liquors can never be sold here. Our experience here has been a most novel one and we have really enjoyed our day. We take the train at 8:30 tonight.\n\n\u2020View on image file pag4.png",
         "location": "POINT (-84.5524358 35.9339638)",
         "images": [
             "/img/tour/page004.png",
@@ -78,7 +71,7 @@
             "/img/tour/page010.png",
             "/img/tour/page011.png",
             "/img/tour/page012.png",
-            "/img/tour/Auditorium_Building_Chicago.png"
+            "/img/tour/Auditorium_Building_Chicago.jpg"
         ]
       },
       {
@@ -510,6 +503,13 @@
           "/img/tour/page121.png",
           "/img/tour/page122.png"
       ]
+    },
+    {
+      "title": "Notes",
+      "date": "Mon, 08/24/2015 - 17:31",
+      "body": "In the summer of 2015 an old journal arrived in the mail. It was dry and cracking and needed to be handled with care. The journal was my Great Grandmother Willie Robards Miller's hand-written journal from a trip she had taken in 1890 with her sister Isabella Hinton Miller, Isabella's husband, William Blackburn Wilson, Jr., their seven children and a nanny. The trip lasted 51 days as they took a train from South Carolina to Chicago, across to Tacoma, down to Oakland, back across to Salt Lake City, down to Denver and back to South Carolina via Fort Worth and New Orleans. As I photographed and then deciphered the handwriting, it became apparent what an amazing trip it had been, from The Auditorium in Chicago to touring Yellowstone National Park a mere 18 years after it had been established, to Seattle a year after the great fire and the alien world of San Francisco's Chinatown. The tour took them to the Great Salt Lake, the Black Canyon of the Gunnison and over the Royal Gorge. An incredible journey at any time, but doubly so for 1890.\n\nCast of Characters\n\nWillie Robards Miller\n\nMy great-grandmother and author of the journal. Willie was 29 when she left to go on this journey.\n\nWilliam Blackburn Wilson, Jr.\n\nWilliam was Willie's brother-in-law. He was 40 at the time of the trip. He and his wife, Isabella, with the help of a nurse, brought their seven children, the youngest around a year old, on the cross country trip.\n\nIsabella Hinton Miller\n\nWillie's sister and William's wife. She was 33 at the time of the trip.\n\nThe children\n\nArrah Isabella - 14 years old\n\tWilliam Blackburn, III - 12 years old\n\tFrances Blackburn - 10 years old\n\tOscar Britton - 8 years old\n\tWilliam Miller - 6 years old\n\tMargaret - 3 years old\n\tLoulie Meriwether - 1 year old\n \n\nJames Lowry Wilson\n\nWilliam's brother. The traveling party met up with Jim in Denver.\n",
+      "location": "",
+      "images": []
     },
     {
       "title": "From The Christian Herald and Signs of Our Times",
