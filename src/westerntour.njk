@@ -103,6 +103,7 @@ extraHead: '<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/le
     background: #1e1a14;
     min-height: 180px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -113,6 +114,13 @@ extraHead: '<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/le
     max-width: 100%;
     display: block;
     margin: 0 auto;
+  }
+
+  .image-slider__caption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    padding: 0.35rem 0.5rem 0;
   }
 
   /* ── Map overlays ─────────────────────────────────────────────── */
@@ -245,10 +253,15 @@ extraHead: '<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/le
           >
             <figure>
               <img
-                src="{{ img }}"
+                src="{{ img.src }}"
                 alt="Journal page {{ loop.index }}"
                 loading="lazy"
               />
+              {% if img.caption %}
+              <figcaption class="image-slider__caption">
+                {{ img.caption }}
+              </figcaption>
+              {% endif %}
             </figure>
           </div>
           {% endfor %} {% if entry.images.length > 1 %}
@@ -289,10 +302,15 @@ extraHead: '<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/le
             >
               <figure>
                 <img
-                  src="{{ img }}"
+                  src="{{ img.src }}"
                   alt="Journal page {{ loop.index }}"
                   loading="lazy"
                 />
+                {% if img.caption %}
+                <figcaption class="image-slider__caption">
+                  {{ img.caption }}
+                </figcaption>
+                {% endif %}
               </figure>
             </div>
             {% endfor %} {% if entry.images.length > 1 %}
